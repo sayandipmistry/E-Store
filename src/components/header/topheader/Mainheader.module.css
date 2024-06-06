@@ -1,0 +1,18 @@
+.searchbar {
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(31, 193, 233);
+}
+.number {
+  position: relative;
+  right: 10px;
+  float: right;
+  background-color: red;
+  font-weight: 700;
+  font-size: 10px;
+  color: white;
+}
+.test {
+  color: rgb(28, 126, 206);
+  text-decoration: underline;
+}

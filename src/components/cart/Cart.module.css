@@ -1,0 +1,24 @@
+.cartt {
+  box-shadow: 3px 3px 5px rgb(109, 108, 108);
+  width: 15rem;
+  height: 25rem;
+  border-radius: 15px;
+}
+.carttittle {
+  font-size: 10px;
+}
+.description {
+  font-size: 8px;
+  text-align: center;
+}
+.wishsign {
+  border: none;
+  width: 10px;
+  position: absolute;
+  right: 19px;
+  top: 15px;
+  background-color: none;
+}
+.wishsign:hover {
+  background-color: red;
+}

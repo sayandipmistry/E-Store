@@ -1,0 +1,21 @@
+.container {
+  background-image: linear-gradient(
+    135deg,
+    rgb(131, 233, 14),
+    white,
+    rgb(199, 233, 8)
+  );
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+.frm {
+  box-shadow: 5px 5px 3px black;
+  border-radius: 0px 30px;
+  background-color: rgb(83, 172, 245);
+  height: 70%;
+}

@@ -1,0 +1,5 @@
+.parrent {
+  grid-template-columns: auto auto;
+  /* grid-column-gap: 15px; */
+  justify-content: space-evenly;
+}
