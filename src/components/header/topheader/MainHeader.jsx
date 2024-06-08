@@ -37,7 +37,8 @@ const MainHeader = () => {
     console.log(data);
     changepath(`/itemshow/${data}`);
   };
-
+  // const logopic = require("/public/picc/online store application.png");
+  // console.log(logopic);
   return (
     <div className={`   container-fluid bg-white p-1     `}>
       <div className={`row ${customStyle.firstheader}`}>
@@ -46,6 +47,8 @@ const MainHeader = () => {
           <NavLink to={"/"}>
             <img
               src="public/picc/online store application.png"
+              // src={logopic}
+              // src={require("../../../assets/imgg/online store application.png")}
               width={160}
               height={50}
               alt=""

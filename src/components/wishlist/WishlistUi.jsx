@@ -13,7 +13,9 @@ const WishlistUi = () => {
         .then((res) => res.json())
         .then((res) => {
           return setwisharray((a) => {
-            return [...a, res];
+            // return [...a, res];
+            const immutableupdate = [...a];
+            return [...immutableupdate, res];
           });
         })
         .catch((err) => console.log(err));
