@@ -4,6 +4,7 @@ import customstyle from "./Loginform.module.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { loginaction } from "../../storeofRedux/Loginchek";
+import { Bounce, toast } from "react-toastify";
 
 const Loginform = () => {
   const changpath = useNavigate();
@@ -26,9 +27,32 @@ const Loginform = () => {
         localStorage.getItem("name") == valuee.namm &&
         localStorage.getItem("password") == valuee.pas
       ) {
+        toast.success("Thank you .", {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Bounce,
+        });
         dispatch(loginaction.maketrue());
       } else {
-        alert("wrong password try again");
+        // toast.warn("wrong password try again");
+        toast.error("invalid", {
+          className: "toast-message",
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          transition: Bounce,
+        });
       }
     }
   };
