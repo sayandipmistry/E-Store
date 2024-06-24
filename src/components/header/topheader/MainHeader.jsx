@@ -24,7 +24,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 //   },
 // ];
 
-const MainHeader = () => {
+const MainHeader = ({ children }) => {
   const changepath = useNavigate();
   const [data, setdata] = useState("");
 
@@ -72,7 +72,7 @@ const MainHeader = () => {
               type="name"
               className={`form-control ${customStyle.searchbar}`}
               id="exampleInputEmail1"
-              placeholder="Search for Products, Brands and More"
+              placeholder={children}
               title="type hear"
               onChange={(e) => {
                 showsearchoption(e);

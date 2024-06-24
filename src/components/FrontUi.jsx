@@ -9,7 +9,7 @@ import Footer from "./footer/Footer";
 const FrontUi = () => {
   return (
     <>
-      <MainHeader />
+      <MainHeader>Search for Products, Brands and Moreeee</MainHeader>
       <Optionbar />
       {/* <FloatingScreen /> */}
       <Outlet />
