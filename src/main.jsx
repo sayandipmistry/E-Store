@@ -17,7 +17,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   // <App />
   <Provider store={mainstore}>
     <App />
-    {/* <ToastContainer
+    <ToastContainer
+      bodyClassName={"forStyletoasify"}
       position="top-right"
       autoClose={3000}
       hideProgressBar={false}
@@ -27,10 +28,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       pauseOnFocusLoss
       draggable
       pauseOnHover
-      theme="dark"
+      theme="colored"
       transition={Zoom}
       // transition: Zoom,
-    /> */}
-    <ToastContainer bodyClassName="forStyletoasify" />
+    />
+    {/* <ToastContainer bodyClassName="forStyletoasify" /> */}
   </Provider>
 );

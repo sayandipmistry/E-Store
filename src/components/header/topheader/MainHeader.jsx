@@ -26,7 +26,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 
 const MainHeader = () => {
   const changepath = useNavigate();
-  const [data, setdata] = useState();
+  const [data, setdata] = useState("");
 
   const showsearchoption = (e) => {
     setdata(e.target.value);
@@ -68,6 +68,7 @@ const MainHeader = () => {
             style={{ width: "87%" }}
           >
             <input
+              value={data} // using two way data binding
               type="name"
               className={`form-control ${customStyle.searchbar}`}
               id="exampleInputEmail1"

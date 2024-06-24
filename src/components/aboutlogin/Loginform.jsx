@@ -4,7 +4,7 @@ import customstyle from "./Loginform.module.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { loginaction } from "../../storeofRedux/Loginchek";
-import { Bounce, toast } from "react-toastify";
+import { Bounce, Zoom, toast } from "react-toastify";
 
 const Loginform = () => {
   const changpath = useNavigate();
@@ -35,24 +35,24 @@ const Loginform = () => {
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
-          theme: "light",
-          transition: Bounce,
+          theme: "colored",
+          transition: Zoom,
         });
         dispatch(loginaction.maketrue());
       } else {
-        // toast.warn("wrong password try again");
-        toast.error("invalid", {
-          className: "toast-message",
-          position: "top-right",
-          autoClose: 2000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "colored",
-          transition: Bounce,
-        });
+        toast.warn("wrong password try again");
+        // toast.error("invalid", {
+        //   className: "toast-message",
+        //   position: "top-right",
+        //   autoClose: 2000,
+        //   hideProgressBar: false,
+        //   closeOnClick: true,
+        //   pauseOnHover: true,
+        //   draggable: true,
+        //   progress: undefined,
+        //   theme: "colored",
+        //   transition: Bounce,
+        // });
       }
     }
   };
