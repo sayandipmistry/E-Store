@@ -21,7 +21,7 @@ const FloatingScreen = () => {
   useEffect(() => {
     let num = 0;
     setInterval(() => {
-      console.log("chek");
+      // console.log("chek");
       setcurrentpic(floatingpic[num].pic);
 
       if (num == 4) {

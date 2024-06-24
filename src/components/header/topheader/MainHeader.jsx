@@ -72,7 +72,7 @@ const MainHeader = ({ children }) => {
               type="name"
               className={`form-control ${customStyle.searchbar}`}
               id="exampleInputEmail1"
-              placeholder={children}
+              placeholder={children} // using component composition
               title="type hear"
               onChange={(e) => {
                 showsearchoption(e);

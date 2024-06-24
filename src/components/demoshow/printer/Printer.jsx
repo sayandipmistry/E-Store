@@ -4,6 +4,7 @@ import customstyle from "./Printer.module.css";
 
 const Printer = ({ children }) => {
   if (children.length == 0) {
+    return <>empty</>;
     // return (
     //   <div className={`${customstyle.parrent} d-grid`}>
     //     {children.map((v, i) => {
