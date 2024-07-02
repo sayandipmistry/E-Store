@@ -2,7 +2,7 @@ import { actionofsetdata } from "../../storeofRedux/ItemData";
 
 const actioncreatfun = (pr) => {
   var meth;
-  if ((pr = "women's clothing")) {
+  if (pr == "women's clothing") {
     meth = actionofsetdata.setWomenclothing;
   } else if (pr == "jewelery") {
     meth = actionofsetdata.setjewelery;

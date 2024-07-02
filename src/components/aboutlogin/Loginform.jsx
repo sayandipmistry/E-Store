@@ -71,7 +71,7 @@ const Loginform = () => {
                     name="namm"
                     onChange={changehandeler}
                     placeholder="type name "
-                    id=""
+                    id="n"
                   />
                 </tr>
                 <br />
@@ -81,7 +81,7 @@ const Loginform = () => {
                     onChange={changehandeler}
                     placeholder="password"
                     name="pas"
-                    id=""
+                    id="p"
                   />
                 </tr>
               </td>

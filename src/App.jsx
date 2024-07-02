@@ -14,6 +14,7 @@ import Loginform from "./components/aboutlogin/Loginform";
 import Protected from "./components/protected/Protected";
 import Thankyou from "./components/thankyou/Thankyou";
 import FloatingScreen from "./components/floatingscreen/FloatingScreen";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 const routername = createBrowserRouter([
   {
@@ -31,8 +32,9 @@ const routername = createBrowserRouter([
 
   {
     path: "/login",
-    element: <Loginform />,
+    element: <ProtectedRoute Log={<FrontUi />} Notlog={<Loginform />} />,
   },
+
   {
     path: "/buy",
     element: <Protected Comp={Loginform}></Protected>,

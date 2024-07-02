@@ -4,12 +4,12 @@ import { useDispatch, useSelector } from "react-redux";
 import actioncreatfun from "../../higherorder/Forapi";
 
 const Electronics = () => {
-  const dis = useDispatch();
+  const dispatch = useDispatch();
   useEffect(() => {
-    dis(actioncreatfun("jewelery"));
+    dispatch(actioncreatfun("jewelery"));
   }, []);
 
-  const ans = useSelector((v) => v.dataitem.Womenclothing);
+  const ans = useSelector((v) => v.dataitem.Jewellery);
   // const [item, setitem] = useState([]);
 
   // useEffect(() => {
